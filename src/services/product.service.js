@@ -1,5 +1,5 @@
 import { json } from "express";
-import products from "../products.json" assert { type: "json" };
+import products from "../products.json" with { type: "json" };
 
 class ProductService {
     constructor() {

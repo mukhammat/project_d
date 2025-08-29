@@ -11,7 +11,7 @@
           <!-- ЛОГОТИП -->
         <div class="hero-logo-wrapper">
             <img 
-            src="http://localhost:3000/img/logo.png" 
+            src="http://45.63.43.62:5566/img/logo.png" 
             alt="Raqmet Логотип" 
             class="hero-logo" 
             />
@@ -103,7 +103,7 @@
           <!-- Image with advanced effects -->
           <div class="image-container">
             <div class="image-frame">
-              <img :src="'http://localhost:3000' + sausage.photo" :alt="sausage.name" class="sausage-photo" />
+              <img :src="'http://45.63.43.62:5566' + sausage.photo" :alt="sausage.name" class="sausage-photo" />
               <div class="image-reflection"></div>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default {
       this.loading = true;
       this.error = null;
       try {
-        const response = await fetch("http://localhost:3000/api/products");
+        const response = await fetch("http://45.63.43.62:5566/api/products");
         if (!response.ok) throw new Error("Ошибка загрузки данных");
         const data = await response.json();
         console.log(data);
