@@ -1,0 +1,15 @@
+[
+    { "id": 1, "name": "Спортивная", "price": 100, "weight": 500, "photo": "/img/sport.jpg" },
+    { "id": 5, "name": "Докторская", "price": 150, "weight": 600, "photo": "/img/doctor.jpg" },
+    { "id": 2, "name": "Молочная", "price": 80, "weight": 300, "photo": "/img/milk.jpg" },
+    { "id": 3, "name": "Чайная", "price": 120, "weight": 400, "photo": "/img/tea.jpg" },
+
+    { "id": 4, "name": "Говяжья", "price": 150, "weight": 600, "photo": "/img/beaf.jpg" },
+    { "id": 6, "name": "Сервелат", "price": 150, "weight": 600, "photo": "/img/servelant.jpg" },
+    { "id": 7, "name": "Особая", "price": 150, "weight": 600, "photo": "/img/ecpeccial.jpg" },
+
+    { "id": 8, "name": "Говяжьи", "price": 150, "weight": 600, "photo": "/img/beaf_so.jpg" },
+    { "id": 9, "name": "Мусульманские", "price": 150, "weight": 600, "photo": "/img/muslim_so.jpg" },
+    { "id": 10, "name": "Молочные", "price": 80, "weight": 300, "photo": "/img/milk_so.jpg" },
+    { "id": 11, "name": "Говяжьи", "price": 150, "weight": 600, "photo": "/img/beaf_ca.jpg" }
+]
