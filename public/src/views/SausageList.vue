@@ -153,7 +153,22 @@
     <div class="address-section">
       <p class="address-line">Улица Ахметова 20</p>
       <p class="address-line">г. Алматы</p>
+
+      <!-- Телефон -->
+      <p class="address-line">
+        <a href="tel:+77003333838" class="contact-link">
+          +7 700 333 38 38
+        </a>
+      </p>
+
+      <!-- Instagram -->
+      <p class="address-line">
+        <a href="https://www.instagram.com/bay_products_kz?igsh=eTM4Y2N2Z3c0Nnkw" target="_blank" class="contact-link">
+          <i class="fab fa-instagram insta-icon"></i> 
+        </a>
+      </p>
     </div>
+
 
     <!-- Background decorative elements -->
     <div class="bg-decoration">
@@ -673,4 +688,21 @@ export default {
   margin: 8px 0;
   line-height: 1.4;
 }
+
+.contact-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #feca57; /* подсветка при наведении */
+}
+
+.insta-icon {
+  margin-right: 8px;
+  font-size: 50px;
+  vertical-align: middle;
+}
+
 </style>
