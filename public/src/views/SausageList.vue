@@ -11,7 +11,7 @@
           <!-- ЛОГОТИП -->
         <div class="hero-logo-wrapper">
             <img 
-            src="http://45.63.43.62:5566/img/logo.png" 
+            :src="server + '/img/logo.png'"
             alt="Raqmet Логотип" 
             class="hero-logo" 
             />
@@ -103,7 +103,7 @@
           <!-- Image with advanced effects -->
           <div class="image-container">
             <div class="image-frame">
-              <img :src="'http://45.63.43.62:5566' + sausage.photo" :alt="sausage.name" class="sausage-photo" />
+              <img :src="server + sausage.photo" :alt="sausage.name" class="sausage-photo" />
               <div class="image-reflection"></div>
             </div>
           </div>
@@ -165,11 +165,14 @@
 </template>
 
 <script>
+
+
 export default {
   name: 'SausageListPage',
   data() {
     return {
-      sausages: [],       // ← теперь пустой массив
+      server: 'http://45.63.43.62:5566',
+      sausages: [],
       loading: true,
       error: null,
       activeFilter: 'Все',
@@ -200,11 +203,11 @@ export default {
       this.loading = true;
       this.error = null;
       try {
-        const response = await fetch("http://45.63.43.62:5566/api/products");
+        const response = await fetch(`${this.server}/api/products`);
         if (!response.ok) throw new Error("Ошибка загрузки данных");
         const data = await response.json();
         console.log(data);
-        this.sausages = data;   // ← кладем из API
+        this.sausages = data;
       } catch (err) {
         this.error = err.message || "Не удалось загрузить продукты";
       } finally {
