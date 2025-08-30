@@ -165,13 +165,13 @@
 </template>
 
 <script>
-
+import { data as d } from '../data';
 
 export default {
   name: 'SausageListPage',
   data() {
     return {
-      server: 'http://45.63.43.62:5566',
+      server: d.server,
       sausages: [],
       loading: true,
       error: null,
